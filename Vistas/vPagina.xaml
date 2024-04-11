@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="gpaucarSemana2Tarea.Vistas.vPagina"
+             Title="vPagina">
+    <VerticalStackLayout>
+        <Label 
+            Text="Sistema de calificaciones Ver. 1.1"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+         />
+
+        <Image Source="https://www.uisrael.edu.ec/wp-content/uploads/2023/01/logo-uisrael@2x-e1674848533171.png"
+         HeightRequest="100"
+         />
+
+
+        <Picker x:Name="pkseleccion" Title="Estudiantes">
+            <Picker.Items>
+                <x:String>Antonio Paucar</x:String>
+                <x:String>Karla Rosero</x:String>
+                <x:String>Juan Solorzano</x:String>
+                <x:String>Fernando Salas</x:String>
+                <x:String>Kevin Condor</x:String>
+            </Picker.Items>
+        </Picker>
+        
+        
+     <Label 
+     Text="Calificaciones Seguimiento 1"
+     HorizontalTextAlignment="Start"
+     FontSize="15"
+     TextColor="White"
+     />
+  
+     <Entry x:Name="txtSeguimiento1" 
+        Placeholder="Nota seguimiento 1"
+         Keyboard="Numeric"
+        />
+    <Entry x:Name="txtExamen1" 
+        Placeholder="Nota seguimiento 1"
+         Keyboard="Numeric"
+     />
+
+
+     <Button 
+     x:Name="btnSeguimiento1"
+     Text="Calcular seguimiento 1"
+     Clicked="btnInicio_Clicked"/>
+
+        <Label 
+          Text="Calificaciones Seguimiento 2"
+ HorizontalTextAlignment="Start"
+ FontSize="15"
+ TextColor="White"
+ />
+
+        <Entry x:Name="txtSeguimiento2" 
+    Placeholder="Nota seguimiento 2"
+     Keyboard="Numeric"
+    />
+        <Entry x:Name="txtExamen2" 
+    Placeholder="Nota seguimiento 2"
+     Keyboard="Numeric"
+ />
+
+
+        <Button 
+ x:Name="btnSeguimiento2"
+ Text="Calcular Seguimiento 2"
+ Clicked="btnInicio2_Clicked"/>
+
+
+
+
+
+
+
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
